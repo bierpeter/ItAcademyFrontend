@@ -238,7 +238,6 @@ body {
     text-decoration: underline;
 }
 
-/* Медиа-запросы для адаптивности */
 @media (max-width: 768px) {
     .campus__content {
         grid-template-columns: 1fr;
