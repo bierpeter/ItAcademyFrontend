@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Детали имущества</title>
+    <link rel="stylesheet" href="styles/unit.css">
+</head>
+<body>
+    <div class="page">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__logo">Система управления имущественным фондом ТУСУР</div>
+                <nav class="header__nav">
+                    <ul class="header__menu">
+                        <li class="header__menu-item"><a href="list(admin).html" class="header__menu-link">Пользователи</a></li>
+                        <li class="header__menu-item"><a href="choose.html" class="header__menu-link">Каталог</a></li>
+                        <li class="header__menu-item"><a href="change_admin.html" class="header__menu-link header__menu-link--button">Профиль</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main">
+            <section class="asset-details">
+                <button class="asset-details__back-button" onclick="window.location.href='choose.html';">←</button>
+                <h1 class="asset-details__title">Детали имущества</h1>
+                <div class="asset-details__content">
+                    <img src="assets/images/PC.svg" alt="Компьютерный блок" class="asset-details__image">
+                    <form class="asset-details__form">
+                        <div class="asset-details__form-group">
+                            <label class="asset-details__label" for="name">Наименование</label>
+                            <input type="text" id="name" class="asset-details__input" value="Системный блок Intel Pentium G3420 SATA 500Gb">
+                        </div>
+                        <div class="asset-details__form-group">
+                            <label class="asset-details__label" for="category">Категория</label>
+                            <input type="text" id="category" class="asset-details__input" value="ИТ-оборудование">
+                        </div>
+                        <div class="asset-details__form-group">
+                            <label class="asset-details__label" for="status">Состояние</label>
+                            <select id="status" class="asset-details__select">
+                                <option>Исправно</option>
+                                <option>Неисправно</option>
+                            </select>
+                        </div>
+                        <div class="asset-details__form-group">
+                            <label class="asset-details__label" for="location">Местоположение</label>
+                            <input type="text" id="location" class="asset-details__input" value="Главный корпус, 2-й этаж, 236 аудитория">
+                        </div>
+                        <div class="asset-details__form-group">
+                            <label class="asset-details__label" for="person">Ответственное лицо</label>
+                            <input type="text" id="person" class="asset-details__input" value="Иванов Иван Иванович">
+                        </div>
+                        <div class="asset-details__form-group">
+                            <label class="asset-details__label" for="date">Дата ввода в эксплуатацию</label>
+                            <input type="date" id="date" class="asset-details__input" value="2023-05-21">
+                        </div>
+                        <button type="button" class="asset-details__history-button">История местоположений</button>
+                        <button type="submit" class="asset-details__save-button">Сохранить изменения</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

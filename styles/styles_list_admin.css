@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main {
+    flex: 1;
+    padding: 20px 20px 40px 20px;
+    background-color: #fff;
+}
+
+.user-list {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.user-list__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.user-list__back-button {
+    background-color: #9FC439;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+.user-list__title {
+    font-size: 1.5em;
+}
+
+.user-list__table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-list__row {
+    border-bottom: 1px solid #ddd;
+}
+
+.user-list__row--header {
+    background-color: #9FC439;
+}
+
+.user-list__cell {
+    padding: 10px;
+    text-align: left;
+}
+
+.user-list__cell--id {
+    width: 5%;
+}
+
+.user-list__cell--name {
+    width: 45%;
+    display: flex;
+    align-items: center;
+}
+
+.user-list__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-list__cell--role {
+    width: 20%;
+}
+
+.user-list__cell--action {
+    width: 20%;
+    text-align: right;
+}
+
+.user-list__action-button {
+    background-color: #8B89BA;
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.footer {
+    padding: 10px 20px;
+    background-color: #fff; 
+}
+
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.footer__pagination {
+    display: flex;
+}
+
+.footer__pagination-button {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin: 0 5px;
+}
+
+.footer__pagination-button:hover {
+    background-color: #ddd;
+}

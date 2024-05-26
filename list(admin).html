@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список пользователей</title>
+    <link rel="stylesheet" href="styles/styles_list_admin.css">
+</head>
+<body>
+    <div class="page">
+        <main class="main">
+            <section class="user-list">
+                <div class="user-list__header">
+                    <button class="user-list__back-button" onclick="window.location.href='choose.html';">←</button>
+                    <h1 class="user-list__title">Список пользователей (только админ)</h1>
+                </div>
+                <table class="user-list__table">
+                    <thead>
+                        <tr class="user-list__row user-list__row--header">
+                            <th class="user-list__cell user-list__cell--id">ID</th>
+                            <th class="user-list__cell user-list__cell--name">ФИО</th>
+                            <th class="user-list__cell user-list__cell--role">Роль</th>
+                            <th class="user-list__cell user-list__cell--action"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="user-list__row">
+                            <td class="user-list__cell user-list__cell--id">1</td>
+                            <td class="user-list__cell user-list__cell--name">
+                                <img src="assets/images/avatar.png" alt="Аватар" class="user-list__avatar">
+                                Иванов Иван Иванович
+                            </td>
+                            <td class="user-list__cell user-list__cell--role">Администратор</td>
+                            <td class="user-list__cell user-list__cell--action">
+                                <button class="user-list__action-button" onclick="window.location.href='change_admin.html';">Просмотр</button>
+                            </td>
+                        </tr>
+                        <tr class="user-list__row">
+                            <td class="user-list__cell user-list__cell--id">2</td>
+                            <td class="user-list__cell user-list__cell--name">
+                                <img src="assets/images/Petr.png" alt="Аватар" class="user-list__avatar">
+                                Петров Петр Петрович
+                            </td>
+                            <td class="user-list__cell user-list__cell--role">Пользователь</td>
+                            <td class="user-list__cell user-list__cell--action">
+                                <button class="user-list__action-button">Просмотр</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__pagination">
+                    <button class="footer__pagination-button">1</button>
+                    <button class="footer__pagination-button">2</button>
+                    <button class="footer__pagination-button">3</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
